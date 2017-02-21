@@ -230,7 +230,7 @@ p.paragraph-text{
 
 p.paragraph-subheader-text{
  text-align: center;
- margin-top:11px;
+ margin-top: 11px;
  font-family: myCustomFontD,sans-serif;
  margin-left: 50px;
  margin-right: 50px;
@@ -239,6 +239,24 @@ p.paragraph-subheader-text{
 }
 @media screen and (max-width: 1040px){
  p.paragraph-subheader-text{
+   margin-top: -9px;
+   padding-right: 2%;
+   padding-left: 2%;
+   margin-left: 0;
+   margin-right: 0;
+ }
+}
+p.paragraph-subheader-text-homepage{
+ text-align: center;
+ margin-top: 11px;
+ font-family: myCustomFontD,sans-serif;
+ margin-left: 50px;
+ margin-right: 50px;
+ font-size: 18px;
+ line-height: 1.4em;
+}
+@media screen and (max-width: 1040px){
+ p.paragraph-subheader-text-homepage{
    padding-right: 2%;
    padding-left: 2%;
    margin-left: 0;
@@ -1114,20 +1132,28 @@ h3.paragraph-title-animations{
 
 p.animations-basic-text{
  text-align: left;
- margin: 10px 4% -3px 4%;
+ margin: 10px 34px -3px 34px;
  line-height: 1.3em;
  font-family: myCustomFontD,sans-serif;
  font-size: 1em;
 }
-@media screen and (max-width: 1040px) and (min-width: 550px){
+@media screen and (max-width: 1040px) and (min-width: 800px){
  p.animations-basic-text{
-   margin-right: 5%;
-   margin-left: 5%;
+   margin-right: 3vw;
+   margin-left: 3vw;
+ }
+}
+@media screen and (max-width: 800px) and (min-width: 550px){
+ p.animations-basic-text{
+   margin-right: 4.7vw;
+   margin-left: 4.7vw;
  }
 }
 @media screen and (max-width: 550px){
   p.animations-basic-text{
     margin-bottom: 0;
+    margin-right: 5%;
+    margin-left: 5%;
   }
 }
 
