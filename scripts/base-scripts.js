@@ -33,7 +33,7 @@ ListItem4.onHover = function() {
 var docEl = document.documentElement,
     $div = document.getElementById('SITE_HEADERscreenWidthBG-homepage');
 
-var a = 0.45,
+var a = 0.75,
     b = 0.9,
     c = 0.25,
     maxOfScroll = 180;

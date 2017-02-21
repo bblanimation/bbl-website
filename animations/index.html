@@ -6,6 +6,7 @@
     <script src="/scripts/analytics-script.js" async></script>
     <script src="/scripts/youtube-embed-script.js" async></script>
     <script src="/scripts/domready.js"></script>
+    <script src="/scripts/base-scripts.js" async></script>
     <meta http-equiv="Cache-control" content="no-store">
     <meta charset="UTF-8">
     <meta name="description" content="Watch LEGO Star Wars videos, hilarious shorts, and more awesome stop motion animations created for your entertainment! See LEGO bricks brought to life before your eyes!">
@@ -28,50 +29,67 @@
 </head>
 
 <body class="homepage-background-color">
-  <div id="SITE_HEADERscreenWidthBG-moviesinthemaking"></div><script>var $div = document.getElementById('SITE_HEADERscreenWidthBG-moviesinthemaking');$div.style.opacity =  0.9.toString();};</script>
-  <span class="mobile-delete" id="featured-image-container-fixed"></span>
+  <!-- <div id="SITE_HEADERscreenWidthBG-moviesinthemaking"></div><script>var $div = document.getElementById('SITE_HEADERscreenWidthBG-moviesinthemaking');$div.style.opacity =  0.9.toString();};</script> -->
+  <div id="SITE_HEADERscreenWidthBG-homepage"></div><!-- <script>var docEl = document.documentElement,$div = document.getElementById('SITE_HEADERscreenWidthBG-homepage');var a = 0.45,b = 0.9,c = 0.25,maxOfScroll = 180;window.onscroll = function(){var sTop = (this.pageYOffset || docEl.scrollTop)  - (docEl.clientTop || 0);v = Math.pow(Math.min(maxOfScroll,sTop)/maxOfScroll,c);$div.style.opacity =  (a + (b - a) * v).toString();};</script> -->
+  <span id="featured-image-container-fixed"></span>
   <div id="SITE_STRUCTURE">
     <div id="SITE_HEADER">
       <ul id="nav">
-        <li><a href="/" alt="Home">Home</a></li>
-        <li class="current_list_item"><a href="#" alt="Watch LEGO Animations">Animations</a></li>
-        <li><a href="/about-me/" alt="About Me">About <span class="mobile-delete">Me</span></a></li>
-        <li><a href="/contact/" alt="Contact Me">Contact</a></li>
+        <li><a class="tab1" href="/" alt="Home">Home</a></li>
+        <li class="current_list_item"><a class="tab2" href="#" alt="Watch LEGO Animations">Animations</a></li>
+        <li><a class="tab3" href="/about-me/" alt="About Me">About <span class="mobile_delete">Me</span></a></li>
+        <li><a class="tab4" href="/contact/" alt="Contact Me">Contact</a></li>
       </ul>
     </div>
     <div id="SITE_CONTENT">
       <div id="PARAGRAPH_CONTAINER" style="margin-top: 0;">
         <span class="delete"><img src="/images/coming-soon/teaser.jpg" width="0" height="0" alt=""></span>
-        <!-- <h3>Featured Animations</h3> -->
-        <!-- <div class="h3-page-title_underline"></div> -->
-        <span class="mobile-delete"><br></span>
-        <h3 class="paragraph-title-coming-soon" style="margin-top: 0;">Featured Animations</h3>
-        <div class="h3_underline-coming-soon" style="width:245px;"></div>
-        <p class="paragraph-subheader-text">If you enjoy these, head to my <a href="https://www.youtube.com/subscription_center?add_user=bigbudlego" target="_blank" title="Subscribe to 'Bricks Brought to Life' on YouTube!">YouTube Channel</a> to subscribe and watch more<span class="mobile-delete"> of my latest videos</span>!</p>
-        <div class="video-container">
-          <div class="youtube-container">
-             <div class="youtube-player-high" data-id="YjTkqg8QFd4"></div>
+        <h4>Featured Animations</h4>
+        <div class="h3-page-title_underline"></div>
+        <p class="animations-basic-text" style="margin-top: 20px;">
+          If you enjoy these animations, head to my <a href="https://www.youtube.com/subscription_center?add_user=bigbudlego" target="_blank" title="Subscribe on YouTube!">YouTube Channel</a> to<span class="mobile_delete"> subscribe and</span> watch more<span class="mobile_delete"> of my latest videos</span>!
+        </p>
+        <div class="video_container">
+          <div class="youtube_container">
+             <div class="youtube_player_high" data-id="YjTkqg8QFd4"></div>
           </div>
+          <a class="video_title" href="https://youtu.be/YjTkqg8QFd4">
+            <p class="video_title">Rogue One: A Star Wars Story in LEGO</p>
+            <p class="video_description">A shot-for-shot recreation of the 2016 standalone Star Wars film. Check out the Side by Side version on YouTube to see how close we got!</p>
+          </a>
         </div>
-        <div class="video-container">
-          <div class="youtube-container">
-             <div class="youtube-player" data-id="R5oVzI4mWlU"></div>
+        <div class="video_container">
+          <div class="youtube_container">
+             <div class="youtube_player" data-id="R5oVzI4mWlU"></div>
           </div>
+          <a class="video_title" href="https://youtu.be/R5oVzI4mWlU">
+            <p class="video_title">Lego Batman - Shark Bait!</p>
+            <p class="video_description">Something isn't right at the aquarium! Can Batman defeat the evil Penguin before he wreaks even more havoc on the innocent onlookers?</p>
+          </a>
         </div>
-        <div class="video-container">
-          <div class="youtube-container">
-             <div class="youtube-player-high" data-id="PMMTsOEXJsY"></div>
+        <br>
+        <div class="video_container">
+          <div class="youtube_container">
+             <div class="youtube_player_high" data-id="PMMTsOEXJsY"></div>
           </div>
+          <a class="video_title" href="https://youtu.be/PMMTsOEXJsY">
+            <p class="video_title">LEGO Star Wars - The Old Republic</p>
+            <p class="video_description">A short Star Wars lightsaber battle from 2012; enjoy some fun Star Wars action as you gear up for Star Wars Episode VIII: The Last Jedi!</p>
+          </a>
         </div>
-        <div class="video-container">
-          <div class="youtube-container">
-             <div class="youtube-player-high" data-id="baJQRqS8I9o"></div>
+        <div class="video_container">
+          <div class="youtube_container">
+             <div class="youtube_player_high" data-id="baJQRqS8I9o"></div>
           </div>
+          <a class="video_title" href="https://youtu.be/baJQRqS8I9o">
+            <p class="video_title">LEGO Star Wars - The Underworld</p>
+            <p class="video_description">See the gritty side of the Star Wars universe during the events of Rogue One: A Star Wars Story. This trailer introduces the plot of a potential short...</p>
+          </a>
         </div>
-        <br><span class="mobile-delete"><br></span>
-        <h3 class="paragraph-title-coming-soon" id="in-the-making">Movies in the Making</h3>
-        <div class="h3_underline-coming-soon" style="width:252px;"></div>
-        <p class="paragraph-subheader-text">Learn about the LEGO animations I'm currently working on!</p>
+        <br><br>
+        <h4>Movies in the Making</h4>
+        <div class="h3-page-title_underline"></div>
+        <p class="paragraph-subheader-text">Learn about the LEGO animations I'm currently working on!</p></a>
         <hr>
         <a class="noFormatChange" href="https://www.youtube.com/subscription_center?add_user=bigbudlego" target="_blank" title="Subscribe to be notified of its release!">
           <div class="coming-soon-info">
@@ -113,23 +131,31 @@
           </a>
         <hr>
         <p class="animations-basic-text">
-          I hope you'll consider <a href="https://www.youtube.com/subscription_center?add_user=bigbudlego" target="_blank" title="Subscribe on YouTube!">Subscribing</a> on YouTube so you know when they're released!
+          I hope you'll consider <a href="https://www.youtube.com/subscription_center?add_user=bigbudlego" target="_blank" title="Subscribe on YouTube!">subscribing</a> on YouTube so you know when they're released!
         </p>
-        <span class="mobile-delete"><br></span>
-        <h3 class="paragraph-title-coming-soon">VFX Breakdowns</h3>
-        <div class="h3_underline-coming-soon" style="width:200px;"></div>
+        <br><br>
+        <h4>VFX Breakdowns</h4>
+        <div class="h3-page-title_underline"></div>
         <p class="paragraph-subheader-text">Find out how I accomplish some of the effects you see in my animations!</p>
-        <div class="video-container">
-          <div class="youtube-container">
-             <div class="youtube-player-high" data-id="w0PiFXoE6zM"></div>
+        <div class="video_container">
+          <div class="youtube_container">
+             <div class="youtube_player_high" data-id="w0PiFXoE6zM"></div>
           </div>
+          <a class="video_title" href="https://youtu.be/w0PiFXoE6zM">
+            <p class="video_title">Rogue One in LEGO! - VFX Breakdown</p>
+            <p class="video_description">See how I accomplished the visual effects in the LEGO Rogue One teaser trailer recreation published on Brotherhood Workshop's channel.</p>
+          </a>
         </div>
-        <div class="video-container">
-          <div class="youtube-container">
-             <div class="youtube-player-high" data-id="mPM6IeqY6is"></div>
+        <div class="video_container">
+          <div class="youtube_container">
+             <div class="youtube_player_high" data-id="mPM6IeqY6is"></div>
           </div>
+          <a class="video_title" href="https://youtu.be/mPM6IeqY6is">
+            <p class="video_title">Suicide Squad in LEGO! - VFX Breakdown</p>
+            <p class="video_description">See how I accomplished the VFX in forrestfire101's Suicide Squad Trailer. I hope you enjoyed this VFX breakdown video! For an in-depth look at...</p>
+          </a>
         </div>
-        <br><br><br><span class="mobile-delete"><br><br></span>
+        <br><br><br><span class="mobile_delete"><br></span>
       </div>
     </div>
     <div id="SITE_FOOTER">

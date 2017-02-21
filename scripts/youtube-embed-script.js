@@ -1,6 +1,6 @@
 // YouTube Player Script
 DomReady.ready(function() {
-    var v = document.getElementsByClassName("youtube-player");
+    var v = document.getElementsByClassName("youtube_player");
     for (var n = 0; n < v.length; n++) {
         var p = document.createElement("div");
         p.innerHTML = labnolThumb(v[n].dataset.id);
@@ -10,7 +10,7 @@ DomReady.ready(function() {
 });
 
 DomReady.ready(function() {
-    var v = document.getElementsByClassName("youtube-player-high");
+    var v = document.getElementsByClassName("youtube_player_high");
     for (var n = 0; n < v.length; n++) {
         var p = document.createElement("div");
         p.innerHTML = labnolThumb2(v[n].dataset.id);
