@@ -27,8 +27,8 @@ DomReady.ready(function() {
 
 function createImgElement(id, type) {
   var img = new Image();
-  img.src = "//i.ytimg.com/vi/" + id + type;
   img.className = "youtube-thumb";
+  img.src = "//i.ytimg.com/vi/" + id + type;
   return img;
 }
 
