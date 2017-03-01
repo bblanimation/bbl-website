@@ -506,27 +506,29 @@ div.video_container{
  font-family: myCustomFontD;
  font-size: 1em;
  position: absolute;
- right:0;
- left:0;
- bottom: 8px;
- color:white;
+ right: 0;
+ left: 0;
+ height: 70px;
+ bottom: inherit;
+ margin-top: -70px;
+ color: white;
+ background-color: rgba(0, 0, 0, 1);
  z-index: 1;
 }
 #SITE_FOOTER .c1{
- margin-left: 36px;
- margin-top:26px;
+ margin-top: 26px;
 }
-#SITE_FOOTERscreenWidthBG{
- position: absolute;
- height: 70px;
- margin-top: -70px;
- z-index: 0;
- bottom: inherit;
- right:0;
- left:0;
- background-color: rgba(0, 0, 0, 1);
+#SITE_FOOTERcenteredcontent{
+  width: 908px;
+  margin-right: auto;
+  margin-left: auto;
 }
-
+@media screen and (max-width: 1040px) {
+  #SITE_FOOTERcenteredcontent{
+    width: 90%;
+    padding-right: 3%;
+  }
+}
 /* END Site Structure */
 
 
@@ -1014,8 +1016,8 @@ ul#nav li.current_list_item a{
 ul.footer-social-icons{
  margin-top: -43px;
  list-style: none;
- position: absolute;
- right: 36px;
+ position: relative;
+ text-align: right;
 }
 ul.footer-social-icons li{
  display: inline-block;
