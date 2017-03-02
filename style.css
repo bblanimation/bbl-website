@@ -574,7 +574,7 @@ div.video_container{
  border: solid rgba(255, 255, 255, 1) 2px;
  cursor: pointer !important;
 }
-#PARAGRAPH_CONTAINER .featured-boxes a.button-hover-link-2 img{
+#PARAGRAPH_CONTAINER .featured-boxes a.button-hover-link img{
  max-width: 100%;
 }
 #PARAGRAPH_CONTAINER .featured-boxes a.button-hover-link .portfolio-button-hover{
