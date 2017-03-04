@@ -6,9 +6,9 @@
     <!-- BEGIN Google Analytics Script --><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', 'UA-44836126-3', 'auto');ga('send', 'pageview');</script><!-- END Google Analytics Script -->
     <script src="/scripts/domready.js"></script>
     <script src="/scripts/youtube-embed-script.js"></script>
-    <script src="/scripts/insert-refactored-code.js"></script>
+    <script src="/scripts/adjust-header-with-scroll.js" async></script>
     <script src="https://apis.google.com/js/platform.js"></script>
-    <meta http-equiv="Cache-control" content="max-age=3600, must-revalidate">
+    <meta http-equiv="cache-control" content="max-age=3600, must-revalidate">
     <meta charset="UTF-8">
     <meta name="description" content="Learn more about the amazing team behind the LEGO Star Wars: Rogue One trailer! Forrestfire101, Brotherhood Workshop, Bricks Brought to Life, and others!">
     <meta name="keywords" content="lego, star wars, films, animations, stop motion, old republic, bigbudlego, bricks brought to life, bbl animation">
@@ -20,175 +20,208 @@
     <base target="_top">
 </head>
 
-<body class="homepage-background-color">
-  <div id="SITE_HEADERscreenWidthBG-moviesinthemaking"></div>
-  <div id="featured-image-container-fixed-mobile-off"></div>
+<body class="bg_color_gray">
+  <div class="header_BG BG_light"></div>
+  <div id="featured_image_container_fixed_mobile_off"></div>
   <div id="SITE_STRUCTURE">
     <div id="SITE_HEADER">
       <ul id="nav">
-        <li><a href="/" alt="Home - Bricks Brought to Life" target="_blank">Home</a></li>
-        <li><a href="/animations/" alt="Watch LEGO Animations">Animations</a></li>
-        <li><a href="/about-me/" alt="About Me - Bricks Brought to Life" target="_blank">About <span class="mobile_delete">me</span></a></li>
-        <li><a href="/contact/" alt="Contact Me - Bricks Brought to Life" target="_blank">Contact</a></li>
+        <li><a href="/" title="Home - Bricks Brought to Life" target="_blank">Home</a></li>
+        <li><a href="/animations/" title="Watch LEGO Animations">Animations</a></li>
+        <li><a href="/about-me/" title="About Me - Bricks Brought to Life" target="_blank">About <span class="mobile_delete">me</span></a></li>
+        <li><a href="/contact/" title="Contact Me - Bricks Brought to Life" target="_blank">Contact</a></li>
       </ul>
     </div>
     <div id="SITE_CONTENT">
-      <div class="expanding3">
+      <div class="expanding_video">
         <div class="youtube_container">
            <div class="youtube_player_high" data-id="YjTkqg8QFd4" onClick="_gaq.push(['_trackEvent', 'watch_video', 'play', 'Rogue One: A Star Wars Story in LEGO', '0']);"></div>
         </div>
       </div>
       <div id="PARAGRAPH_CONTAINER">
-        <h4 id="about-the-animators">About the Animators</h4>
-        <div class="h3-page-title_underline" style="margin-bottom: 0;"></div>
-        <!-- <p class="paragraph-subheader-text">Learn more about the animators who brought the LEGO Star Wars: Rogue One trailer to life!</p> -->
-        <div class="coming-soon-info">
+        <h4 id="about_the_animators">
+          About the Animators
+        </h4>
+        <div class="h4_underline" style="margin-bottom: 0;"></div>
+        <!-- <p class="paragraph_subheader_text">Learn more about the animators who brought the LEGO Star Wars: Rogue One trailer to life!</p> -->
+        <div class="coming_soon_info">
           <a href="https://www.youtube.com/subscription_center?add_user=bigbudlego" onClick="_gaq.push(['_trackEvent', 'actions', 'click', 'youtube_subscribe', '1']);" target="_blank" title="Subscribe to this channel!"><img class="another-channel-logo" src="/images/logos/bricksbroughttolife.jpg" alt="Subscribe for updates!"></a>
-          <p class="coming-soon-title">Christopher Gearhart <span class="mobile-add"><br></span>(Bricks Brought to Life)<span class="mobile_delete right-align" onClick="_gaq.push(['_trackEvent', 'actions', 'click', 'youtube_subscribe', '1']);"><span class="g-ytsubscribe" data-channel="bigbudlego" data-layout="default" data-count="default"></span></span></p>
-          <p class="coming-soon-tagline">
+          <p class="coming_soon_title">
+            Christopher Gearhart <span class="mobile_add"><br></span>(Bricks Brought to Life)
+            <span class="mobile_delete right_align" onClick="_gaq.push(['_trackEvent', 'actions', 'click', 'youtube_subscribe', '1']);"><span class="g-ytsubscribe" data-channel="bigbudlego" data-layout="default" data-count="default"></span></span>
+          </p>
+          <p class="coming_soon_tagline">
             Role: Director, VFX Artist, Compositor
           </p>
-          <p class="coming-soon-details-raised">
+          <p class="coming_soon_details_raised">
             As a long-time animator on YouTube, Chris directed the project and tackled a majority of the post-production work. Drop by his channel for more awesome LEGO Star Wars action and comedy!
             <br><br>
             <a href="http://www.bblanimation.com/">Website</a> |
             <a href="http://www.youtube.com/c/bigbudlego" onClick="_gaq.push(['_trackEvent', 'social_links', 'click_link', 'youtube', '1']);">YouTube</a> |
             <a href="http://www.facebook.com/bblanimation" onClick="_gaq.push(['_trackEvent', 'social_links', 'click_link', 'facebook', '1']);">Facebook</a>
-            <span class="right-align" onClick="_gaq.push(['_trackEvent', 'actions', 'click', 'youtube_subscribe', '1']);"><span class="mobile-add-small-delete"><span class="g-ytsubscribe" data-channel="bigbudlego" data-layout="default" data-count="default"></span></span><span class="small-mobile-add"><span class="g-ytsubscribe" data-channel="bigbudlego" data-layout="default" data-count="hidden"></span></span></span
+            <span class="right_align" onClick="_gaq.push(['_trackEvent', 'actions', 'click', 'youtube_subscribe', '1']);"><span class="mobile_add_small_delete"><span class="g-ytsubscribe" data-channel="bigbudlego" data-layout="default" data-count="default"></span></span><span class="small_mobile_add"><span class="g-ytsubscribe" data-channel="bigbudlego" data-layout="default" data-count="hidden"></span></span></span>
           </p>
         </div>
         <hr />
-        <div class="coming-soon-info">
+        <div class="coming_soon_info">
           <a href="https://www.youtube.com/subscription_center?add_user=brotherhoodworkshop" target="_blank" title="Subscribe to this channel!"><img class="another-channel-logo" src="/images/logos/brotherhoodworkshop.jpg" alt=""></a>
-          <p class="coming-soon-title">Kevin Ulrich <span class="mobile-add"><br></span>(Brotherhood Workshop)<span class="mobile_delete right-align"><span class="g-ytsubscribe" data-channel="brotherhoodworkshop" data-layout="default" data-count="default"></span></span></p>
-          <p class="coming-soon-tagline">
+          <p class="coming_soon_title">
+            Kevin Ulrich <span class="mobile_add"><br></span>(Brotherhood Workshop)
+            <span class="mobile_delete right_align"><span class="g-ytsubscribe" data-channel="brotherhoodworkshop" data-layout="default" data-count="default"></span></span>
+          </p>
+          <p class="coming_soon_tagline">
             Role: Lead Animator
           </p>
-          <p class="coming-soon-details-raised">
+          <p class="coming_soon_details_raised">
             Kevin filmed a majority of the shots in the trailer, from the Yavin IV command center to the awesome action sequence at (0:27). Check out his channel and have a laugh watching hilarious and awesome LEGO videos!
             <br><br>
             <a href="http://www.brotherhoodworkshop.com/" target="_blank">Website</a> |
             <a href="https://www.youtube.com/c/BrotherhoodWorkshop" target="_blank">YouTube</a> |
             <a href="https://www.facebook.com/BrotherhoodWorkshop" target="_blank">Facebook</a>
-            <span class="mobile-add-small-delete right-align"><span class="g-ytsubscribe" data-channel="BrotherhoodWorkshop" data-layout="default" data-count="default"></span></span><span class="small-mobile-add right-align"><span class="g-ytsubscribe" data-channel="BrotherhoodWorkshop" data-layout="default" data-count="hidden"></span></span>
+            <span class="mobile_add_small_delete right_align"><span class="g-ytsubscribe" data-channel="BrotherhoodWorkshop" data-layout="default" data-count="default"></span></span><span class="small_mobile_add right_align"><span class="g-ytsubscribe" data-channel="BrotherhoodWorkshop" data-layout="default" data-count="hidden"></span></span>
           </p>
         </div>
         <hr />
-        <div class="coming-soon-info">
+        <div class="coming_soon_info">
           <a href="https://www.youtube.com/subscription_center?add_user=mobdeli" target="_blank" title="Subscribe to this channel!"><img class="another-channel-logo" src="/images/logos/mobdeli.jpg" alt=""></a>
-          <p class="coming-soon-title">Spencer Katz <span class="mobile-add"><br></span>(mobdeli)<span class="mobile_delete right-align"><span class="g-ytsubscribe" data-channel="mobdeli" data-layout="default" data-count="default"></span></span></p>
-          <p class="coming-soon-tagline">
+          <p class="coming_soon_title">
+            Spencer Katz <span class="mobile_add"><br></span>(mobdeli)
+            <span class="mobile_delete right_align"><span class="g-ytsubscribe" data-channel="mobdeli" data-layout="default" data-count="default"></span></span>
+          </p>
+          <p class="coming_soon_tagline">
             Role: Lead Animator
           </p>
-          <p class="coming-soon-details-raised">
+          <p class="coming_soon_details_raised">
             Spencer Katz took on three of the most challenging and impressive shots of the trailer - the Yavin IV Hangar Base and the AT-AT Battle. Head over to his channel for awesome, massive-scale stop motion videos!
             <br><br>
             <a href="http://www.youtube.com/user/mobdeli" target="_blank">YouTube</a> |
             <a href="https://www.youtube.com/redirect?q=https%3A%2F%2Fplus.google.com%2F115159850668567578400%3FpageId%3D104345117668856830118&redir_token=HfbgeYNpk75j8z9WPVm_FcmktD98MTQ2MTM5MDAzMUAxNDYxMzAzNjMx" target="_blank">Google+</a>
-            <span class="mobile-add-small-delete right-align"><span class="g-ytsubscribe" data-channel="mobdeli" data-layout="default" data-count="default"></span></span><span class="small-mobile-add right-align"><span class="g-ytsubscribe" data-channel="mobdeli" data-layout="default" data-count="hidden"></span></span>
+            <span class="mobile_add_small_delete right_align"><span class="g-ytsubscribe" data-channel="mobdeli" data-layout="default" data-count="default"></span></span><span class="small_mobile_add right_align"><span class="g-ytsubscribe" data-channel="mobdeli" data-layout="default" data-count="hidden"></span></span>
           </p>
         </div>
         <hr />
-        <div class="coming-soon-info">
+        <div class="coming_soon_info">
           <a href="https://www.youtube.com/subscription_center?add_user=bionicle28" target="_blank" title="Subscribe to this channel!"><img class="another-channel-logo" src="/images/logos/bionicle28.jpg" alt=""></a>
-          <p class="coming-soon-title">Kris Theorin <span class="mobile-add"><br></span>(bionicle28)<span class="mobile_delete right-align"><span class="g-ytsubscribe" data-channel="bionicle28" data-layout="default" data-count="default"></span></span></p>
-          <p class="coming-soon-tagline">
+          <p class="coming_soon_title">
+            Kris Theorin <span class="mobile_add"><br></span>(bionicle28)
+            <span class="mobile_delete right_align"><span class="g-ytsubscribe" data-channel="bionicle28" data-layout="default" data-count="default"></span></span>
+          </p>
+          <p class="coming_soon_tagline">
             Role: CGI Artist
           </p>
-          <p class="coming-soon-details-raised">
+          <p class="coming_soon_details_raised">
             Kris Theorin played a key role in designing the second Death Star insert at (0:49)! Check out his channel for LEGO shorts about Batman action figures, apocalyptic civil litigation, and eccentric clone troopers.
             <br><br>
             <a href="http://www.youtube.com/user/bionicle28?feature=results_main" target="_blank">YouTube</a> |
             <a href="https://www.facebook.com/Bionicle28" target="_blank">Facebook</a> |
             <a href="https://www.twitter.com/Bionicle28" target="_blank">Twitter</a>
-            <span class="mobile-add-small-delete right-align"><span class="g-ytsubscribe" data-channel="Bionicle28" data-layout="default" data-count="default"></span></span><span class="small-mobile-add right-align"><span class="g-ytsubscribe" data-channel="Bionicle28" data-layout="default" data-count="hidden"></span></span>
+            <span class="mobile_add_small_delete right_align"><span class="g-ytsubscribe" data-channel="Bionicle28" data-layout="default" data-count="default"></span></span><span class="small_mobile_add right_align"><span class="g-ytsubscribe" data-channel="Bionicle28" data-layout="default" data-count="hidden"></span></span>
           </p>
         </div>
         <hr />
-        <div class="coming-soon-info">
+        <div class="coming_soon_info">
           <a href="https://www.youtube.com/subscription_center?add_user=filmyguy1" target="_blank" title="Subscribe to this channel!"><img class="another-channel-logo" src="/images/logos/filmyguy1.jpg" alt=""></a>
-          <p class="coming-soon-title">Sean Willets <span class="mobile-add"><br></span>(theofficialfilmyguy)<span class="mobile_delete right-align"><span class="g-ytsubscribe" data-channel="filmyguy1" data-layout="default" data-count="default"></span></span></p>
-          <p class="coming-soon-tagline">
+          <p class="coming_soon_title">
+            Sean Willets <span class="mobile_add"><br></span>(theofficialfilmyguy)
+            <span class="mobile_delete right_align"><span class="g-ytsubscribe" data-channel="filmyguy1" data-layout="default" data-count="default"></span></span>
+          </p>
+          <p class="coming_soon_tagline">
             Role: Animator
           </p>
-          <p class="coming-soon-details-raised">
+          <p class="coming_soon_details_raised">
             Sean Willets animated three epic shots for the trailer, including the imperial chase scene at (1:10). Head over to his channel for hilarious comedy and incredible stop motion animations.
             <br><br>
             <a href="http://www.youtube.com/user/filmyguy1" target="_blank">YouTube</a> |
             <a href="https://www.facebook.com/filmyguy1" target="_blank">Facebook</a> |
             <a href="https://twitter.com/filmyguy" target="_blank">Twitter</a>
-            <span class="mobile-add-small-delete right-align"><span class="g-ytsubscribe" data-channel="filmyguy1" data-layout="default" data-count="default"></span></span><span class="small-mobile-add right-align"><span class="g-ytsubscribe" data-channel="filmyguy1" data-layout="default" data-count="hidden"></span></span>
+            <span class="mobile_add_small_delete right_align"><span class="g-ytsubscribe" data-channel="filmyguy1" data-layout="default" data-count="default"></span></span><span class="small_mobile_add right_align"><span class="g-ytsubscribe" data-channel="filmyguy1" data-layout="default" data-count="hidden"></span></span>
           </p>
         </div>
         <hr />
-        <div class="coming-soon-info">
+        <div class="coming_soon_info">
           <a href="https://www.youtube.com/subscription_center?add_user=zachmg" target="_blank" title="Subscribe to this channel!"><img class="another-channel-logo" src="/images/logos/zachmg.jpg" alt=""></a>
-          <p class="coming-soon-title">Zach Macias <span class="mobile-add"><br></span>(Mindgame Studios)<span class="mobile_delete right-align"><span class="g-ytsubscribe" data-channel="zachmg" data-layout="default" data-count="default"></span></span></p>
-          <p class="coming-soon-tagline">
+          <p class="coming_soon_title">
+            Zach Macias <span class="mobile_add"><br></span>(Mindgame Studios)
+            <span class="mobile_delete right_align"><span class="g-ytsubscribe" data-channel="zachmg" data-layout="default" data-count="default"></span></span>
+          </p>
+          <p class="coming_soon_tagline">
             Role: Animator
           </p>
-          <p class="coming-soon-details-raised">
+          <p class="coming_soon_details_raised">
             Zach Macias contributed two sweet shots for the trailer: Jyn riding a transport (0:38) and Jyn’s Imperial disguise (1:26). Check out his channel for professional LEGO stop motion shorts you won’t forget.
             <br><br>
             <a href="https://www.youtube.com/user/ZachMG" target="_blank">YouTube</a> |
             <a href="https://www.facebook.com/mindgamestudios/" target="_blank">Facebook</a> |
             <a href="https://twitter.com/zachmg" target="_blank">Twitter</a>
-            <span class="mobile-add-small-delete right-align"><span class="g-ytsubscribe" data-channel="zachmg" data-layout="default" data-count="default"></span></span><span class="small-mobile-add right-align"><span class="g-ytsubscribe" data-channel="zachmg" data-layout="default" data-count="hidden"></span></span>
+            <span class="mobile_add_small_delete right_align"><span class="g-ytsubscribe" data-channel="zachmg" data-layout="default" data-count="default"></span></span><span class="small_mobile_add right_align"><span class="g-ytsubscribe" data-channel="zachmg" data-layout="default" data-count="hidden"></span></span>
           </p>
         </div>
         <hr />
-        <div class="coming-soon-info">
+        <div class="coming_soon_info">
           <a href="https://www.youtube.com/subscription_center?add_user=SpastikChuwawa" target="_blank" title="Subscribe to this channel!"><img class="another-channel-logo" src="/images/logos/spastikchuwawa.jpg" alt=""></a>
-          <p class="coming-soon-title">James Morr <span class="mobile-add"><br></span>(Spastik Chuwawa)<span class="mobile_delete right-align"><span class="g-ytsubscribe" data-channel="SpastikChuwawa" data-layout="default" data-count="default"></span></span></p>
-          <p class="coming-soon-tagline">
+          <p class="coming_soon_title">
+            James Morr <span class="mobile_add"><br></span>(Spastik Chuwawa)
+            <span class="mobile_delete right_align"><span class="g-ytsubscribe" data-channel="SpastikChuwawa" data-layout="default" data-count="default"></span></span>
+          </p>
+          <p class="coming_soon_tagline">
             Role: Animator
           </p>
-          <p class="coming-soon-details-raised">
+          <p class="coming_soon_details_raised">
             James built many of the awesome set pieces in the trailer including the background elements from (1:15), and animated the ominous Bacta Tank shot. Check out his channel for more fun LEGO animations!
             <br><br>
             <a href="https://www.youtube.com/user/SpastikChuwawa" target="_blank">YouTube</a> |
             <a href="https://www.facebook.com/spastikchuwawa" target="_blank">Facebook</a> |
             <a href="https://twitter.com/spastikchuwawa" target="_blank">Twitter</a>
-            <span class="mobile-add-small-delete right-align"><span class="g-ytsubscribe" data-channel="spastikchuwawa" data-layout="default" data-count="default"></span></span><span class="small-mobile-add right-align"><span class="g-ytsubscribe" data-channel="spastikchuwawa" data-layout="default" data-count="hidden"></span></span>
+            <span class="mobile_add_small_delete right_align"><span class="g-ytsubscribe" data-channel="spastikchuwawa" data-layout="default" data-count="default"></span></span><span class="small_mobile_add right_align"><span class="g-ytsubscribe" data-channel="spastikchuwawa" data-layout="default" data-count="hidden"></span></span>
           </p>
         </div>
         <hr />
-        <div class="coming-soon-info">
+        <div class="coming_soon_info">
           <a href="https://www.youtube.com/subscription_center?add_user=SpastikChuwawa" target="_blank" title="Subscribe to this channel!"><img class="another-channel-logo" src="/images/logos/bricknerd.jpg" alt=""></a>
-          <p class="coming-soon-title">Tommy Williamson <span class="mobile-add"><br></span>(BrickNerd)<span class="mobile_delete right-align"><span class="g-ytsubscribe" data-channel="BrickNerdTV" data-layout="default" data-count="default"></span></span></p>
-          <p class="coming-soon-tagline">
+          <p class="coming_soon_title">
+            Tommy Williamson <span class="mobile_add"><br></span>(BrickNerd)
+            <span class="mobile_delete right_align"><span class="g-ytsubscribe" data-channel="BrickNerdTV" data-layout="default" data-count="default"></span></span>
+          </p>
+          <p class="coming_soon_tagline">
             Role: Animator
           </p>
-          <p class="coming-soon-details-raised">
+          <p class="coming_soon_details_raised">
             Tommy constructed many of the awesome set pieces in the trailer, including the ship at (1:14) and the ominous Bacta Tank set at (1:17). Stop by his channel for LiveBuilds, reviews, animation and much more.
             <br><br>
             <a href="http://www.bricknerd.com/" target="_blank">Website</a> |
             <a href="https://www.youtube.com/user/BrickNerdTV" target="_blank">YouTube</a> |
             <a href="https://plus.google.com/108961766259032428780?pageId=104345117668856830118" target="_blank">Google+</a>
-            <span class="mobile-add-small-delete right-align"><span class="g-ytsubscribe" data-channel="bricknerdtv" data-layout="default" data-count="default"></span></span><span class="small-mobile-add right-align"><span class="g-ytsubscribe" data-channel="bricknerdtv" data-layout="default" data-count="hidden"></span></span>
+            <span class="mobile_add_small_delete right_align"><span class="g-ytsubscribe" data-channel="bricknerdtv" data-layout="default" data-count="default"></span></span><span class="small_mobile_add right_align"><span class="g-ytsubscribe" data-channel="bricknerdtv" data-layout="default" data-count="hidden"></span></span>
           </p>
         </div>
         <hr />
-        <div class="coming-soon-info">
+        <div class="coming_soon_info">
           <a href="https://www.youtube.com/subscription_center?add_user=forrestfire101" target="_blank" title="Subscribe to this channel!"><img class="another-channel-logo" src="/images/logos/forrestfire101.jpg" alt=""></a>
-          <p class="coming-soon-title">Forrest Whaley <span class="mobile-add"><br></span>(forrestfire101)<span class="mobile_delete right-align"><span class="g-ytsubscribe" data-channel="forrestfire101" data-layout="default" data-count="default"></span></span></p>
-          <p class="coming-soon-tagline">
+          <p class="coming_soon_title">
+            Forrest Whaley <span class="mobile_add"><br></span>(forrestfire101)
+            <span class="mobile_delete right_align"><span class="g-ytsubscribe" data-channel="forrestfire101" data-layout="default" data-count="default"></span></span>
+          </p>
+          <p class="coming_soon_tagline">
             Role: Animator
           </p>
-          <p class="coming-soon-details-raised">
+          <p class="coming_soon_details_raised">
             Forrest animated the foreground plate for the Grand Admiral’s approach to the battlefield at 1:15. Check out his channel for epic LEGO action and comedy shorts – anything from Captain America to the Good Dinosaur!
             <br><br>
             <a href="https://www.youtube.com/user/forrestfire101" target="_blank">YouTube</a> |
             <a href="https://www.facebook.com/forrestfire101" target="_blank">Facebook</a> |
             <a href="https://twitter.com/forrestfire101" target="_blank">Twitter</a>
-            <span class="mobile-add-small-delete right-align"><span class="g-ytsubscribe" data-channel="forrestfire101" data-layout="default" data-count="default"></span></span><span class="small-mobile-add right-align"><span class="g-ytsubscribe" data-channel="forrestfire101" data-layout="default" data-count="hidden"></span></span>
+            <span class="mobile_add_small_delete right_align"><span class="g-ytsubscribe" data-channel="forrestfire101" data-layout="default" data-count="default"></span></span><span class="small_mobile_add right_align"><span class="g-ytsubscribe" data-channel="forrestfire101" data-layout="default" data-count="hidden"></span></span>
           </p>
         </div>
         <hr />
         <br>
-        <h4>Behind the Scenes</h4>
-        <div class="h3-page-title_underline"></div>
-        <p class="paragraph-subheader-text">See how the team accomplished the complicated shots and awesome VFX from the trailer!</p>
+        <h4>
+          Behind the Scenes
+        </h4>
+        <div class="h4_underline"></div>
+        <p class="paragraph_subheader_text">
+          See how the team accomplished the complicated shots and awesome VFX from the trailer!
+        </p>
         <div class="video_container">
           <div class="youtube_container">
              <div class="youtube_player_high" data-id="w0PiFXoE6zM" onClick="_gaq.push(['_trackEvent', 'watch_video', 'play', 'Rogue One in LEGO - VFX Breakdown', '1']);"></div>
@@ -209,9 +242,13 @@
           </div>
         </div>
         <br>
-        <h4>More LEGO Star Wars</h4>
-        <div class="h3-page-title_underline"></div>
-        <p class="paragraph-subheader-text">See more Star Wars action from the animators who brought you the trailer!</p>
+        <h4>
+          More LEGO Star Wars
+        </h4>
+        <div class="h4_underline"></div>
+        <p class="paragraph_subheader_text">
+          See more Star Wars action from the animators who brought you the trailer!
+        </p>
         <div class="video_container">
           <div class="youtube_container">
              <div class="youtube_player_high" data-id="baJQRqS8I9o" onClick="_gaq.push(['_trackEvent', 'watch_video', 'play', 'LEGO Star Wars - The Underworld', '1']);"></div>
@@ -242,9 +279,13 @@
              <div class="youtube_player_high" data-id="eaVOw6bXmks" onClick="_gaq.push(['_trackEvent', 'watch_video', 'play', 'Rebels Paint the Town Orange', '0']);"></div>
           </div>
         </div>
-        <h4>Even MORE <span class="mobile_delete">LEGO</span> Videos!</h4>
-        <div class="h3-page-title_underline"></div>
-        <p class="paragraph-subheader-text">Watch more videos from our animation team, and subscribe to their channels for more!</p>
+        <h4>
+          Even MORE <span class="mobile_delete">LEGO</span> Videos!
+        </h4>
+        <div class="h4_underline"></div>
+        <p class="paragraph_subheader_text">
+          Watch more videos from our animation team, and subscribe to their channels for more!
+        </p>
         <div class="video_container">
           <div class="youtube_container">
              <div class="youtube_player_high" data-id="n7o6ERhuEN4" onClick="_gaq.push(['_trackEvent', 'watch_video', 'play', 'LEGO: The Call of Farqunglu', '0']);"></div>
@@ -285,7 +326,7 @@
              <div class="youtube_player_high" data-id="mUEPDrHWt-c" onClick="_gaq.push(['_trackEvent', 'watch_video', 'play', 'Batman vs Superman - Dawn of Just Desserts', '0']);"></div>
           </div>
         </div>
-        <p class="paragraph-text">
+        <p class="ac_text">
           Also check out the <a href="https://youtu.be/r5F-r9LczxM?list=PLeXTJiny_fxFu_Jz0MKodZ2Wlb1nYGw8O" onClick="_gaq.push(['_trackEvent', 'watch_video_external', 'click', 'Rogue One: A Star Wars Story in LEGO (side-by-side)', '1']);">side-by-side comparasin</a> for Rogue One: A Star Wars Story in LEGO. <a href="#about-the-animators">Subscribe</a> to our channels for more awesome LEGO films in the future!
         </p>
         <br><br>
