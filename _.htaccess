@@ -9,14 +9,14 @@ satisfy all
 Header set Cache-Control "max-age=31536000, public"
 </FilesMatch>
 
-# 2 WEEKS
+# 1 WEEKS
 <FilesMatch "\.(jpg|jpeg|png|gif|swf)$">
-Header set Cache-Control "max-age=1209600, public"
+Header set Cache-Control "max-age=604800, public"
 </FilesMatch>
 
-# 1 WEEK
+# 1 DAY
 <FilesMatch "\.(txt|xml|js|css)$">
-Header set Cache-Control "max-age=604800"
+Header set Cache-Control "max-age=86400"
 </FilesMatch>
 
 # compress text, html, javascript, css, xml:

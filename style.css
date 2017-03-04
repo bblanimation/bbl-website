@@ -13,10 +13,6 @@
  src: url(fonts/openSans.ttf);
 }
 @font-face {
- font-family: MyCustomFontC-light;
- src: url(fonts/openSans-light.ttf);
-}
-@font-face {
  font-family: MyCustomFontD;
  src: url(fonts/din-light.ttf);
 }
