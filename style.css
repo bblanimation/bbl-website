@@ -537,6 +537,16 @@ span.button_hover_text{
   }
 }
 
+.left_align{
+  float: left;
+  margin-top: 2px;
+}
+@media screen and (max-width: 550px){
+  .left_align{
+    margin-top:-7px;
+  }
+}
+
 .expanding_video{
  position: relative;
  left: 0px;
@@ -824,6 +834,11 @@ span.delete{
    display: none;
  }
 }
+@media screen and (min-width:1040px){
+  span.tablet_add{
+    display: none;
+  }
+}
 ul#nav li.current_list_item a{
  position: relative;
  color: #FAC055;
@@ -998,6 +1013,7 @@ div.video_container{
  margin-bottom: 2px;
  margin-right: -1px;
  margin-left: -1px;
+ vertical-align: top;
  /*border: 1px solid #e2e2e2;*/
 }
 @media screen and (max-width: 800px){
