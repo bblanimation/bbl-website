@@ -15,5 +15,7 @@ None
 ### Creators
   * Chris Gearhart (Owner at Bricks Brought to Life)
     * https://www.facebook.com/bblanimation/
-    * http://www.youtube.com/c/bigbudlego
+    * https://www.instagram.com/bblanimation/
+    * https://www.twitter.com/bblanimation/
+    * http://www.youtube.com/c/bblanimation?sub_confirmation=1
     * https://www.linkedin.com/in/christopher-gearhart-16b902a3/
