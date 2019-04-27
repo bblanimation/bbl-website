@@ -462,14 +462,10 @@ div.featured_boxes .hover_button{
     border: solid rgba(255, 255, 255, 1) 2px;
     cursor: pointer !important;
 }
-div.featured_boxes .hover_button.blender_market_page {
-    margin-top: 10px;
-    margin-left: 50%
-}
-div.featured_boxes .hover_button.animations_page{
+div.featured_boxes .hover_button.left_hover_button{
     margin-left: 257px;
 }
-div.featured_boxes .hover_button.about_me_page{
+div.featured_boxes .hover_button.right_hover_button{
     margin-left: 32px;
 }
 span.button_hover_text{
@@ -483,7 +479,8 @@ span.button_hover_text{
     div.featured_boxes{
         margin: 16px 21px 24px 20px;
     }
-    div.featured_boxes .hover_button{
+    div.featured_boxes .hover_button.left_hover_button,
+    div.featured_boxes .hover_button.right_hover_button{
         margin-left: 147px;
     }
     span.button_hover_text{
@@ -493,11 +490,14 @@ span.button_hover_text{
 @media screen and (max-width: 1040px) and (min-width: 800px){
     div.featured_boxes{
         width: 42vw;
-        height: auto;
+        height: 32vw;
         margin: 16px 1vw 2% 1vw;
     }
     div.featured_boxes .hover_button{
         width: 15.3%;
+    }
+    div.featured_boxes .hover_button.left_hover_button,
+    div.featured_boxes .hover_button.right_hover_button{
         margin-left: 13.2vw;
     }
 }
@@ -516,11 +516,14 @@ span.button_hover_text{
 @media screen and (max-width: 550px){
     div.featured_boxes{
         width: 84vw;
-        height:auto;
+        height:64vw;
         margin: 0 1vw 4% 1vw;
     }
-    div.featured_boxes .hover_button{
+    div.featured_boxes .hover_button.left_hover_button,
+    div.featured_boxes .hover_button.right_hover_button{
         margin-left: 24vw;
+    }
+    div.featured_boxes .hover_button{
         width: 35%;
     }
 }
