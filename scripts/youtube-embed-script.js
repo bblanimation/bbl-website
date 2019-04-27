@@ -62,10 +62,10 @@ function labnolIframe() {
     this.parentNode.replaceChild(iframe, this);
   } else {
     // mobile devices redirect to YouTube
-    openInNewTab()
+    openInNewTab(this.parentNode.dataset.id)
   }
 }
 
-function openInNewTab() {
-    window.open("http://youtu.be/" + this.parentNode.dataset.id + "?list=PLeXTJiny_fxFu_Jz0MKodZ2Wlb1nYGw8O&autoplay=1", "_blank");
+function openInNewTab(id) {
+    window.open("http://youtu.be/" + id + "?list=PLeXTJiny_fxFu_Jz0MKodZ2Wlb1nYGw8O&autoplay=1", "_blank");
 }
