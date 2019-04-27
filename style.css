@@ -423,8 +423,9 @@ div.featured_boxes{
   width: 433px;
   height: 320px;
   display: inline-block;
-  margin: 16px 21px 34px 20px;
+  margin: 16px 21px 0 20px;
   box-shadow: none;
+  overflow: hidden;
   /* FOR SMOOTH TRANSITION EFFECT */
   -moz-transition: box-shadow 0.4s ease-in-out;
   -webkit-transition: box-shadow 0.4s ease-in-out;
@@ -432,9 +433,23 @@ div.featured_boxes{
   transition: box-shadow 0.4s ease-in-out;
 }
 div.featured_boxes img{
- max-width: 100%;
+  max-height: 100%;
+  min-height: 100%;
+}
+div.featured_boxes img.shift_image_left {
+  position: relative;
+  left: 50%;
+  transform: translateX(-40%)
+}
+div.featured_boxes img.shift_image_right {
+  position: relative;
+  right: 50%;
+  transform: translateX(6%)
 }
 div.featured_boxes .hover_button{
+  width: 136px;
+  height: 41px;
+  margin-top: -80px;
   word-spacing: -2px;
   font-weight: bold;
   color: #FFFFFF;
@@ -447,17 +462,15 @@ div.featured_boxes .hover_button{
   border: solid rgba(255, 255, 255, 1) 2px;
   cursor: pointer !important;
 }
+div.featured_boxes .hover_button.blender_market_page {
+  margin-top: 10px;
+  margin-left: 50%
+}
 div.featured_boxes .hover_button.animations_page{
- width: 136px;
- height: 41px;
- margin-top: -80px;
- margin-left: 257px;
+  margin-left: 257px;
 }
 div.featured_boxes .hover_button.about_me_page{
- width: 136px;
- height: 41px;
- margin-top: -80px;
- margin-left: 32px;
+  margin-left: 32px;
 }
 span.button_hover_text{
  font-size: 14px;
@@ -470,8 +483,7 @@ span.button_hover_text{
  div.featured_boxes{
    margin: 16px 21px 24px 20px;
  }
- div.featured_boxes .hover_button.about_me_page,
- div.featured_boxes .hover_button.animations_page{
+ div.featured_boxes .hover_button{
    margin-left: 147px;
  }
  span.button_hover_text{
@@ -484,8 +496,7 @@ span.button_hover_text{
    height: auto;
    margin: 16px 1vw 2% 1vw;
  }
- div.featured_boxes .hover_button.about_me_page,
- div.featured_boxes .hover_button.animations_page{
+ div.featured_boxes .hover_button{
    width: 15.3%;
    margin-left: 13.2vw;
  }
@@ -508,8 +519,7 @@ span.button_hover_text{
    height:auto;
    margin: 0 1vw 4% 1vw;
  }
- div.featured_boxes .hover_button.about_me_page,
- div.featured_boxes .hover_button.animations_page{
+ div.featured_boxes .hover_button{
    margin-left: 24vw;
    width: 35%;
  }
@@ -593,7 +603,7 @@ span.button_hover_text{
 }
 @media screen and (max-width: 865px){
   #about_featured_image{
-    width: 100%;
+    width: 97%;
     height: 65vw;
     margin-bottom: 20px;
   }
@@ -1003,7 +1013,25 @@ p.video_description{
 .youtube_player_high { display: block; width: 100%; /* assuming that the video has a 16:9 ratio */ padding-bottom: 56.25%; overflow: hidden; position: relative; width: 100%; height: 100%; cursor: hand; cursor: pointer; display: block; }
 .youtube_player_link { display: block; width: 100%; /* assuming that the video has a 16:9 ratio */ padding-bottom: 56.25%; overflow: hidden; position: relative; width: 100%; height: 100%; cursor: hand; cursor: pointer; display: block; }
 img.youtube-thumb { bottom: 0; display: block; left: 0; margin: auto; max-width: 100%; width: 100%; position: absolute; right: 0; top: 0; height: auto }
-div.play-button { height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; background: url("http://i.imgur.com/TxzC70f.png") no-repeat; }
+div.play-button { height: 66px; width: 66px; left: 50%; top: 50%; margin-left: -33px; margin-top: -33px; position: absolute; background: url("images/play-button/youtube-play-button-grey.png") no-repeat; background-size: 66px 46px;}
+img.youtube-thumb:hover ~ div.play-button {
+    background: url("images/play-button/youtube-play-button-red.png") no-repeat;
+    background-size: 66px 46px;
+    /* FOR SMOOTH TRANSITION EFFECT */
+    -webkit-transition: background .1s;
+    -moz-transition: background .1s;
+    -o-transition: background .1s;
+    transition: background .1s
+}
+div.play-button:hover {
+    background: url("images/play-button/youtube-play-button-red.png") no-repeat;
+    background-size: 66px 46px;
+    /* FOR SMOOTH TRANSITION EFFECT */
+    -webkit-transition: background .1s;
+    -moz-transition: background .1s;
+    -o-transition: background .1s;
+    transition: background .1s
+}
 #youtube-iframe { width: 100%; height: 100%; position: absolute; top: 0; left: 0; }
 /* YouTube Video Div Container */
 div.video_container{
